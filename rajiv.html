@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form</title>
+</head>
+<body>
+
+    <h1>Contact Form</h1>
+
+    <form action="/submit" method="post">
+        <!-- Text Input -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+<br>
+
+        <!-- Email Input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+<br>
+
+        <!-- Password Input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+<br>
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label>
+        <label for="male"><input type="radio" id="male" name="gender" value="male"> Male</label>
+        <label for="female"><input type="radio" id="female" name="gender" value="female"> Female</label>
+<br>
+        <!-- Checkboxes -->
+        <label>Interests:</label>
+        <label for="coding"><input type="checkbox" id="coding" name="interests" value="coding"> Coding</label>
+        <label for="reading"><input type="checkbox" id="reading" name="interests" value="reading"> Reading</label>
+        <label for="sports"><input type="checkbox" id="sports" name="interests" value="sports"> Sports</label>
+<br>
+        <!-- Textarea for Longer Text -->
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea>
+<br>
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
